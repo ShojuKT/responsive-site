@@ -1,0 +1,87 @@
+@charset "UTF-8";
+html {
+  font-size: 62.5%; }
+
+body {
+  color: #4c4c4c;
+  font-size: 1.4rem;
+  font-family: "游ゴシック", YuGothic, "メイリオ", Verdana, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  line-height: 1.6;
+  letter-spacing: 0.1em;
+  background-color: #fdfcf6; }
+
+header {
+  height: 500px;
+  width: 100%;
+  background-image: url("../images/sax.jpg");
+  background-size: cover;
+  background-position: center center; }
+
+@media (max-width: 768px) {
+  header {
+    height: 250px;
+    width: 100%;
+    background-position: 50% 63%; } }
+h2 {
+  color: #4c4c4c;
+  padding-top: 15px;
+  padding-bottom: 15px; }
+
+h3 {
+  background-color: #c99514; }
+
+.text-center {
+  text-align: center; }
+
+#music-instruments {
+  background-color: #fdfcf6; }
+  #music-instruments .container {
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    -webkit-flex-direction: row;
+    flex-direction: row; }
+  @media (max-width: 768px) {
+    #music-instruments .container {
+      display: -webkit-flex;
+      display: flex;
+      justify-content: space-between;
+      -webkit-flex-direction: column;
+      flex-direction: column; } }
+  #music-instruments .box {
+    background-color: #a1be00;
+    color: #4c4c4c;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    -webkit-flex: 1;
+    flex: 1;
+    margin: 10px 10;
+    padding: 10px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+
+footer {
+  background-color: #a1be00;
+  text-align: center;
+  height: 90px; }
+  footer .button {
+    width: 200px;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    color: #4c4c4c;
+    background-color: #c99514;
+    border-radius: 5px;
+    margin: 10px auto; }
+
+/*# sourceMappingURL=style.css.map */

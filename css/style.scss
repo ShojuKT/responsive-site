@@ -1,0 +1,112 @@
+@import "compass";
+$baseFontFamily :"游ゴシック",
+YuGothic,
+"メイリオ",
+Verdana,
+"Hiragino Kaku Gothic ProN",
+Meiryo,
+sans-serif;
+
+$baseColor: #fdfcf6;
+$subColor: #a1be00;
+$keyColor: #c99514;
+$fontColor: #4c4c4c;
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    color: $fontColor;
+    font-size: 1.4rem;
+    font-family: $baseFontFamily;
+    line-height: 1.6;
+    letter-spacing: 0.1em;
+    background-color: $baseColor;
+}
+
+//header
+header {
+    // .image-music {
+        height: 500px;
+        width: 100%;
+        background-image: url("../images/sax.jpg");
+        background-size: cover;
+        background-position: center center;
+    // }
+}
+
+@media(max-width: 768px) {
+    header {
+        // .image-music {
+            height: 250px;
+            width: 100%;
+            background-position: 50% 63%;
+        // }
+    }
+}
+
+//bady
+h2 {
+    color: $fontColor;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+h3 {
+    background-color: $keyColor;
+    
+}
+.text-center {
+    text-align: center;
+}
+
+#music-instruments {
+    background-color: $baseColor;
+    .container {
+        @include display-flex;
+        justify-content: space-between;
+        @include flex-direction(row);
+    }
+@media(max-width: 768px) {
+    .container{
+    @include display-flex;
+        justify-content: space-between;
+        @include flex-direction(column);
+}
+}
+    .box {
+        background-color: $subColor;
+        color: $fontColor;
+        margin-bottom: 15px;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        @include flex(1);
+        margin: 10px 10;
+        padding: 10px;
+        @include border-radius(4px);
+        @include box-sizing(border-box);
+    }
+}
+
+
+//footer
+footer {
+    background-color: $subColor;
+    text-align: center;
+    height: 90px;
+    .button {
+        width: 200px;
+        font-size: 12px;
+        font-weight: bold;
+        text-decoration: none;
+        display: block;
+        padding: 10px 0;
+        margin-bottom: 20px;
+        color: $fontColor;
+        background-color: $keyColor;
+        border-radius: 5px;
+        margin: 10px auto;
+    }
+}
